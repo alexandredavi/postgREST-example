@@ -22,7 +22,7 @@ Configuration
 
 Running the Server
 
-* postgrest postgres://user:pass@host:port/postgrest -a anon_user [other flags]
+* postgrest postgres://user:pass@host:port/postgrest -a [user] -p 4000
 
 
 
