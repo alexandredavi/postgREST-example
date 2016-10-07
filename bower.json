@@ -1,0 +1,36 @@
+{
+  "name": "postgREST",
+  "version": "1.0.0",
+  "dependencies": {
+    "angular-resource": "~1.5.3",
+    "angular-ui-router": "~0.2.15",
+    "bootstrap-sass": "~3.3.5",
+    "angular-bootstrap": "~0.14.3",
+    "angular": "~1.5.3"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/_bootstrap.scss",
+        "assets/fonts/bootstrap/glyphicons-halflings-regular.eot",
+        "assets/fonts/bootstrap/glyphicons-halflings-regular.svg",
+        "assets/fonts/bootstrap/glyphicons-halflings-regular.ttf",
+        "assets/fonts/bootstrap/glyphicons-halflings-regular.woff",
+        "assets/fonts/bootstrap/glyphicons-halflings-regular.woff2"
+      ]
+    },
+    "fontawesome": {
+          "main": [
+              "css/font-awesome.css",
+              "fonts/fontawesome-webfont.eot",
+              "fonts/fontawesome-webfont.woff",
+              "fonts/fontawesome-webfont.ttf",
+              "fonts/fontawesome-webfont.svg"
+          ]
+      }
+  },
+  "resolutions": {
+    "jquery": "~2.1.4",
+    "angular": "~1.5.3"
+  }
+}
