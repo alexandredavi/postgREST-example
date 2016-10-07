@@ -6,15 +6,26 @@
     .controller('postgRestController', postgRestController);
 
   /* @ngInject */
-  function postgRestController() {
+  function postgRestController(postgRestService) {
     var vm = this;
 
     vm.user = {};
+    vm.users = [];
     vm.submitUser= submitUser;
     vm.userFields = getUserFields();
 
+    getAllUsers();
+
+    function getAllUsers() {
+      postgRestService.getAllUsers().success(function(data) {
+        vm.users = data;
+      });
+    }
+
     function submitUser(user) {
-      console.log(user);
+      postgRestService.saveUser(user).success(function() {
+        vm.users.put(user);
+      });
     }
 
     function getUserFields() {
