@@ -40,6 +40,7 @@
         {
           key: 'name',
           type: 'input',
+          defaultValue: 'Default Name',
           templateOptions: {
             type: 'text',
             label: 'Name',
@@ -48,6 +49,7 @@
         }, {
           key: 'email',
           type: 'input',
+          defaultValue: 'Default E-mail',
           templateOptions: {
             type: 'email',
             label: 'Email',
@@ -56,6 +58,7 @@
         }, {
           key: 'address',
           type: 'input',
+          defaultValue: 'Default Address',
           templateOptions: {
             type: 'text',
             label: 'Address',
@@ -64,6 +67,7 @@
         }, {
           key: 'bio',
           type: 'input',
+          defaultValue: 'Default Bio',
           templateOptions: {
             type: 'text',
             label: 'Bio',
