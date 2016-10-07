@@ -10,6 +10,22 @@ PostgREST is a standalone web server that turns your database directly into a RE
 GET /people?age=lt.13
 ```
 
+Configuration
+
+* Install [The Haskell Tool Stack](https://docs.haskellstack.org/en/stable/README/#how-to-install)
+* Add the PostgreSQL path in the variable "Path" in the system variables
+* git clone https://github.com/begriffs/postgrest.git
+* cd postgrest
+* stack build --install-ghc
+* stack install --allow-different-user
+* run the database.sql to create the database structure
+
+Running the Server
+
+* postgrest postgres://user:pass@host:port/postgrest -a [user] -p 4000
+
+
+
 ## Angular-Formly
 
 Powerful, flexible, simple forms for Angular!
