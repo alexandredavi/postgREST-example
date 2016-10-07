@@ -11,7 +11,8 @@
 
     vm.user = {};
     vm.users = [];
-    vm.submitUser= submitUser;
+    vm.submitUser = submitUser;
+    vm.removeUser = removeUser;
     vm.userFields = getUserFields();
 
     getAllUsers();
@@ -24,7 +25,13 @@
 
     function submitUser(user) {
       postgRestService.saveUser(user).success(function() {
-        vm.users.put(user);
+        getAllUsers();
+      });
+    }
+
+    function removeUser(id) {
+      postgRestService.removeUser(id).success(function() {
+        getAllUsers();
       });
     }
 
@@ -65,6 +72,7 @@
         }, {
           key: 'vip',
           type: 'checkbox',
+          defaultValue: false,
           templateOptions: {
             label: 'Are you VIP?'
           }

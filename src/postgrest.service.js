@@ -10,7 +10,8 @@
 
       var service = {
         saveUser: saveUser,
-        getAllUsers: getAllUsers
+        getAllUsers: getAllUsers,
+        removeUser: removeUser
       };
 
       return service;
@@ -21,6 +22,10 @@
 
       function getAllUsers() {
         return $http.get('http://localhost:4000/user');
+      }
+
+      function removeUser(id) {
+        return $http.delete('http://localhost:4000/user?id=eq.' + id);
       }
     }
 
