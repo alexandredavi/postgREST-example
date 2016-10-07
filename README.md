@@ -17,7 +17,7 @@ Configuration
 * git clone https://github.com/begriffs/postgrest.git
 * cd postgrest
 * stack build --install-ghc
-* sudo stack install --allow-different-user
+* stack install --allow-different-user
 * run the database.sql to create the database structure
 
 Running the Server
