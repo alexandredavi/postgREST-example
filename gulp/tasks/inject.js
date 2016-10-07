@@ -23,7 +23,7 @@ gulp.task('inject', ['scripts', 'styles'], function () {
   ], { read: false });
 
   var injectScripts = gulp.src([
-    path.join(globals.paths.src, '/app/**/**/**/**/*.js')
+    path.join(globals.paths.src, '/*.js')
   ])
   .pipe($.angularFilesort()).on('error', config.errorHandler('AngularFilesort'));
 

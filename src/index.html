@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html ng-app="postgREST">
   <head>
     <meta charset="utf-8">
     <title>postgREST Example</title>
@@ -18,10 +18,20 @@
     <!-- endinject -->
     <!-- endbuild -->
   </head>
-  <body>
+  <body ng-controller="postgRestController as vm">
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <formly-form model="vm.user" fields="vm.userFields">
+            <button type="submit" class="btn btn-default" ng-click="vm.submitUser(vm.user)">Submit</button>
+          </formly-form>
+        </div>
+      </div>
+    </div>
 
     <!-- <div ui-view></div> -->
 

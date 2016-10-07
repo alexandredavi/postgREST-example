@@ -1,0 +1,108 @@
+/**
+ * Se você quiser sobreescrever algumas variaveis do bootstrap, você deve trocar os valores aqui.
+ * A lista de variaveis está definida aqui: bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
+ *
+ * Não remova os comentários abaixo. São as marcações usadas pelo wiredep para
+ * injetar as dependencias sass quando definidas no bower.json das dependencias.
+ */
+
+ //$fa-font-path: "../../bower_components/font-awesome/fonts";
+ //@import "../../bower_components/font-awesome/scss/font-awesome.scss";
+
+// bower:scss
+// endbower
+
+/**
+ * Não remova os comentários abaixo. São as marcações usadas pelo gulp-inject para
+ * injetar automaticamente todos os arquivos sass.
+ */
+// injector
+// endinjector
+
+
+/**
+ * Configurações de componentes globais
+ *
+ */
+
+input, select, button {
+ border-radius: 0px !important;
+}
+
+.pagination {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.row {
+  margin-top: 10px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.btn {
+  height: 34px !important;
+}
+
+.panel {
+  border-radius: 0px;
+}
+
+.panel-heading {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.thumbnail {
+  height: 200px;
+
+  img.pull-right {
+    width: 50px;
+  }
+}
+
+.nav-tabs {
+  margin-bottom: 10px;
+}
+
+.textarea-chars-left {
+  @extend .badge;
+  background-color: #EDECEB;
+  color: #ABABAB;
+}
+
+.tachado {
+  text-decoration: line-through;
+}
+
+/**
+ * Utilitários de Margin
+ */
+
+.top10 {
+ margin-top: 10px;
+}
+
+.top0 {
+ margin-top: 0px;
+}
+
+.button-col {
+  width: 1%;
+}
+
+/**
+ * Utilitários de Cor
+ */
+
+$red-bootstrap: #d9534f;
+$green-bootstrap: #5cb85c;
+$orange-bootstrap: #f0ad4e;
+$blue-bootstrap: #5bc0de;

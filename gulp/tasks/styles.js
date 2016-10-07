@@ -24,13 +24,12 @@ var buildStyles = function() {
   };
 
   var injectFiles = gulp.src([
-    path.join(globals.paths.src, '/*.scss'),
-    path.join(globals.paths.src, '/postgREST.scss')
+    path.join(globals.paths.src, 'postgrest.scss')
   ], { read: false });
 
   var injectOptions = {
     transform: function(filePath) {
-      filePath = filePath.replace(globals.paths.src, '');
+      filePath = filePath.replace(globals.paths.src, '/');
       return '@import "' + filePath + '";';
     },
     starttag: '// injector',
@@ -39,7 +38,7 @@ var buildStyles = function() {
   };
 
   return gulp.src([
-    path.join(globals.paths.src, '/postgREST.scss')
+    path.join(globals.paths.src, 'postgrest.scss')
   ])
     .pipe($.inject(injectFiles, injectOptions))
     .pipe(wiredep(_.extend({}, config.wiredep)))
