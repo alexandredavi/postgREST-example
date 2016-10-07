@@ -18,10 +18,11 @@ Configuration
 * cd postgrest
 * stack build --install-ghc
 * sudo stack install --allow-different-user
+* run the database.sql to create the database structure
 
 Running the Server
 
-* postgrest postgres://user:pass@host:port/db -a anon_user [other flags]
+* postgrest postgres://user:pass@host:port/postgrest -a anon_user [other flags]
 
 
 
